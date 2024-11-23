@@ -1,0 +1,66 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@app/image-templates": [
+        "libs/image-templates/src"
+      ],
+      "@app/image-templates/*": [
+        "libs/image-templates/src/*"
+      ],
+      "@app/images": [
+        "libs/images/src"
+      ],
+      "@app/images/*": [
+        "libs/images/src/*"
+      ],
+      "@app/djs": [
+        "libs/djs/src"
+      ],
+      "@app/djs/*": [
+        "libs/djs/src/*"
+      ],
+      "@app/db": [
+        "libs/db/src"
+      ],
+      "@app/db/*": [
+        "libs/db/src/*"
+      ],
+      "@app/commands": [
+        "libs/commands/src"
+      ],
+      "@app/commands/*": [
+        "libs/commands/src/*"
+      ],
+      "@app/constants": [
+        "libs/constants/src"
+      ],
+      "@app/constants/*": [
+        "libs/constants/src/*"
+      ],
+      "@app/utils": [
+        "libs/utils/src"
+      ],
+      "@app/utils/*": [
+        "libs/utils/src/*"
+      ]
+    }
+  }
+}

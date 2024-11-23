@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "monorepo": true,
+  "compilerOptions": {
+    "webpack": false
+  },
+  "projects": {
+    "bot": {
+      "type": "application",
+      "root": "apps/bot",
+      "entryFile": "main",
+      "sourceRoot": "apps/bot/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/bot/tsconfig.app.json"
+      }
+    },
+    "image-templates": {
+      "type": "library",
+      "root": "libs/image-templates",
+      "entryFile": "index",
+      "sourceRoot": "libs/image-templates/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/image-templates/tsconfig.lib.json"
+      }
+    },
+    "images": {
+      "type": "library",
+      "root": "libs/images",
+      "entryFile": "index",
+      "sourceRoot": "libs/images/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/images/tsconfig.lib.json"
+      }
+    },
+    "djs": {
+      "type": "library",
+      "root": "libs/djs",
+      "entryFile": "index",
+      "sourceRoot": "libs/djs/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/djs/tsconfig.lib.json"
+      }
+    },
+    "db": {
+      "type": "library",
+      "root": "libs/db",
+      "entryFile": "index",
+      "sourceRoot": "libs/db/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/db/tsconfig.lib.json"
+      }
+    },
+    "commands": {
+      "type": "library",
+      "root": "libs/commands",
+      "entryFile": "index",
+      "sourceRoot": "libs/commands/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/commands/tsconfig.lib.json"
+      }
+    },
+    "constants": {
+      "type": "library",
+      "root": "libs/constants",
+      "entryFile": "index",
+      "sourceRoot": "libs/constants/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/constants/tsconfig.lib.json"
+      }
+    },
+    "utils": {
+      "type": "library",
+      "root": "libs/utils",
+      "entryFile": "index",
+      "sourceRoot": "libs/utils/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/utils/tsconfig.lib.json"
+      }
+    }
+  }
+}

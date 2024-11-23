@@ -1,0 +1,4 @@
+libs/**/dist/**/*
+apps/**/dist/**/*
+dist
+.eslintrc.json
